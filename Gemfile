@@ -8,8 +8,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise'
 # Optional - Thin server instead of webrick
 gem 'thin'
+# Use: "rails g rename:app_to New-Name" after cloning this repo to rename your app
+gem 'rename'
 # Postgresql
-gem 'pg'
+#gem 'pg'
 
 # Assets
 gem 'sass-rails', '~> 4.0.0'
@@ -21,6 +23,15 @@ gem 'zurb-foundation'
 
 group :development, :test do
 	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+	gem 'sqlite3'
+end
+
+group :test do
+	gem 'faker'
+  	gem 'capybara'
+  	gem 'guard-rspec'
+  	gem 'zeus'
 end
 
 group :development do
